@@ -1,0 +1,22 @@
+.forecast{
+    float:left;
+    width:10%;
+    text-align:center;
+    margin-top: 10px;
+    font-size: 1.1em;
+    
+}
+#weather-card{
+    margin-top:15px;
+    margin-bottom:15px;
+    font-size: 1.2em;
+}
+#weather{
+    margin-left:40%;
+}
+.container{
+    background-image: url('day.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}

@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h1 style="text-align:center;">Weather Forecast</h1>
+    <div id="weather">
+        <input #city placeholder="Type the city Name"/>
+        <button (click)="getWeather(city.value)">Get Weather</button>
+        <div id="weather-card">
+          <div>{{title}}</div>
+          <div>{{temperature}}</div>
+          <div>{{text}}</div>
+        </div>
+        
+      </div>
+      <div class="forecast" *ngFor="let weather of forecast">
+        <span><div>{{weather.day}}</div>
+          <div>{{weather.high}}</div>
+          <div>{{weather.low}}</div>
+          <div>{{weather.text}}</div>
+          <!-- <i class="wi {{weather.className}}"></i> -->
+        </span> 
+        
+      </div>
+</div>
