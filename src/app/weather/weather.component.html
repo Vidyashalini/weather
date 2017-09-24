@@ -6,8 +6,8 @@
         <button (click)="getWeather(city.value)">Get Weather</button>
         <div id="weather-card">
           <div>{{title}}</div>
-          <div>{{temperature}}</div>
-          <div>{{text}}</div>
+          <div><span>{{temperature}}</span><span *ngIf=temperature>&deg;,</span><span>{{text}}</span> </div>
+          
         </div>
         
       </div>
@@ -20,4 +20,5 @@
         </span> 
         
       </div>
+      <div style="text-align:center;" *ngIf="resultsFound">No Results found</div>
 </div>
